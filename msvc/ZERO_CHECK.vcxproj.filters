@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3f8935bb04ac0e127a0d80c374fc3fa5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E16B15C2-A7C6-3397-8D25-443A141EC995}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

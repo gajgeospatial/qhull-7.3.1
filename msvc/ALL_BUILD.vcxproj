@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84365711-6153-3119-8B86-7EFB365FAF25}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\qhull-7.3.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\qhull-7.3.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\qhull-7.3.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\qhull-7.3.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/qhull-7.3.1 -BC:/Development/op3d_active/qhull-7.3.1/msvc --check-stamp-file C:/Development/op3d_active/qhull-7.3.1/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeModules\CheckLFS.cmake;C:\Development\op3d_active\qhull-7.3.1\build\config.cmake.in;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF64_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.cxx;C:\Development\op3d_active\qhull-7.3.1\qhull.pc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/qhull-7.3.1 -BC:/Development/op3d_active/qhull-7.3.1/msvc --check-stamp-file C:/Development/op3d_active/qhull-7.3.1/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeModules\CheckLFS.cmake;C:\Development\op3d_active\qhull-7.3.1\build\config.cmake.in;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF64_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.cxx;C:\Development\op3d_active\qhull-7.3.1\qhull.pc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/qhull-7.3.1 -BC:/Development/op3d_active/qhull-7.3.1/msvc --check-stamp-file C:/Development/op3d_active/qhull-7.3.1/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeModules\CheckLFS.cmake;C:\Development\op3d_active\qhull-7.3.1\build\config.cmake.in;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF64_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.cxx;C:\Development\op3d_active\qhull-7.3.1\qhull.pc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/qhull-7.3.1 -BC:/Development/op3d_active/qhull-7.3.1/msvc --check-stamp-file C:/Development/op3d_active/qhull-7.3.1/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Development/op3d_active/qhull-7.3.1/CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;C:\Development\op3d_active\qhull-7.3.1\CMakeModules\CheckLFS.cmake;C:\Development\op3d_active\qhull-7.3.1\build\config.cmake.in;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF64_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.c;C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\feature_tests.cxx;C:\Development\op3d_active\qhull-7.3.1\qhull.pc.in;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Development\op3d_active\qhull-7.3.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\op3d_active\qhull-7.3.1\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\ZERO_CHECK.vcxproj">
+      <Project>{3D5D3FF6-1A2A-37E0-8427-7B75BDEB9E48}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\libqhull.vcxproj">
+      <Project>{03263927-98AB-34A3-9E9A-BB359B3DAC4C}</Project>
+      <Name>libqhull</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qconvex.vcxproj">
+      <Project>{B0584755-0AF1-3D10-B4A4-10BE93A7C39F}</Project>
+      <Name>qconvex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qdelaunay.vcxproj">
+      <Project>{4261E132-F159-355F-BEFE-FC8D71795791}</Project>
+      <Name>qdelaunay</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhalf.vcxproj">
+      <Project>{79AD996C-AB71-3261-BB86-7C0A5B818464}</Project>
+      <Name>qhalf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhull.vcxproj">
+      <Project>{D82CA420-9D24-3F96-B580-D4A4A21023E4}</Project>
+      <Name>qhull</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhull_p.vcxproj">
+      <Project>{C2937582-6CE8-37C4-B3E3-1B60284F2162}</Project>
+      <Name>qhull_p</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhull_r.vcxproj">
+      <Project>{A6962F4E-2693-3096-AB96-7483360271D6}</Project>
+      <Name>qhull_r</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhullcpp.vcxproj">
+      <Project>{D4E9CE5F-8FB0-37FD-93D1-E18D99361AAC}</Project>
+      <Name>qhullcpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhullstatic.vcxproj">
+      <Project>{DD040FBA-7667-34E8-93C8-60B373B29D73}</Project>
+      <Name>qhullstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qhullstatic_r.vcxproj">
+      <Project>{04FFF3F2-A566-334E-8074-F73940B26127}</Project>
+      <Name>qhullstatic_r</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\qvoronoi.vcxproj">
+      <Project>{80650186-1469-3D62-B3AC-791FAD45F7D5}</Project>
+      <Name>qvoronoi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\rbox.vcxproj">
+      <Project>{5AF3528F-3456-3113-943D-550F39764086}</Project>
+      <Name>rbox</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\testqset.vcxproj">
+      <Project>{376796DC-934B-3D2F-8210-D4D754EEB704}</Project>
+      <Name>testqset</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\testqset_r.vcxproj">
+      <Project>{2E74815C-13D1-3A1A-9C92-2678E50C1736}</Project>
+      <Name>testqset_r</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\user_eg.vcxproj">
+      <Project>{292FC6EE-8E6A-3CAA-8B47-7E435037AA8A}</Project>
+      <Name>user_eg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\user_eg2.vcxproj">
+      <Project>{7D6DA39A-E81E-32F6-AFE7-E75CE80019B3}</Project>
+      <Name>user_eg2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\qhull-7.3.1\msvc\user_eg3.vcxproj">
+      <Project>{44D62D60-DBD0-33B6-B234-65650E9C5A4E}</Project>
+      <Name>user_eg3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
